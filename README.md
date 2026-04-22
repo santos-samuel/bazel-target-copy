@@ -16,7 +16,7 @@ https://github.com/user-attachments/assets/d96c631c-d007-4aac-aa88-b2485f7ec234
 - **IntelliJ IDEA** 2024.1 or later
 - **Java** 17 or later (for building the plugin)
 - At least one of the following Bazel plugins installed in your IDE:
-  - [Bazel for IntelliJ (EAP)](https://plugins.jetbrains.com/plugin/22972) by JetBrains
+  - [Bazel](https://plugins.jetbrains.com/plugin/22977) by JetBrains
   - [Bazel for IntelliJ](https://plugins.jetbrains.com/plugin/8609) by Google
 
 > **Note:** This plugin does **not** provide Bazel language support on its own. It extends the file type registered by one of the above plugins. At least one must be installed and enabled.
