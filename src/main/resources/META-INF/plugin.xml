@@ -1,0 +1,27 @@
+<idea-plugin>
+    <id>com.github.santossamuel.bazeltargetcopy</id>
+    <name>Bazel Target Copy</name>
+    <vendor url="https://github.com/santos-samuel/bazel-target-copy">
+        santos-samuel
+    </vendor>
+
+    <description><![CDATA[
+        Adds an inlay hint next to each Bazel rule in <code>BUILD.bazel</code> files.
+        Click the hint to copy the fully-qualified target label (e.g.
+        <code>//path/to/package:target_name</code>) to your clipboard.
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- JetBrains Bazel (EAP) plugin -->
+        <codeInsight.inlayProvider
+            language="Starlark"
+            implementationClass="com.github.santossamuel.bazeltargetcopy.BazelTargetInlayHintsProvider"/>
+
+        <!-- Google Bazel for IntelliJ plugin -->
+        <codeInsight.inlayProvider
+            language="BUILD"
+            implementationClass="com.github.santossamuel.bazeltargetcopy.BazelTargetInlayHintsProvider"/>
+    </extensions>
+</idea-plugin>
