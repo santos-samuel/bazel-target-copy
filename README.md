@@ -2,7 +2,7 @@
 
 An IntelliJ plugin that adds a clickable inlay hint next to each Bazel rule in `BUILD.bazel` files. Click the hint to copy the fully-qualified target label to your clipboard.
 
-![Demo](docs/demo.png)
+https://github.com/user-attachments/assets/d96c631c-d007-4aac-aa88-b2485f7ec234
 
 ## Features
 
