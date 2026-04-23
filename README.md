@@ -31,7 +31,9 @@ https://github.com/user-attachments/assets/d96c631c-d007-4aac-aa88-b2485f7ec234
 
 ### From JetBrains Marketplace
 
-Coming soon...
+Search for **Bazel Target Copy** in **Settings → Plugins → Marketplace**, or install directly from:
+
+https://plugins.jetbrains.com/plugin/31404
 
 ### From disk
 

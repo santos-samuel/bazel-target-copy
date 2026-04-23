@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "com.github.santossamuel"
-version = "1.0.0"
+version = "1.0.1"
 
 repositories {
     mavenCentral()
@@ -23,10 +23,15 @@ dependencies {
 intellijPlatform {
     pluginConfiguration {
         name = "Bazel Target Copy"
-        version = "1.0.0"
+        version = project.version.toString()
+        changeNotes = """
+            <ul>
+                <li>Removed until-build cap so the plugin remains available in future IntelliJ versions</li>
+            </ul>
+        """.trimIndent()
         ideaVersion {
             sinceBuild = "241"
-            untilBuild = "251.*"
+            untilBuild = provider { null }
         }
     }
 
